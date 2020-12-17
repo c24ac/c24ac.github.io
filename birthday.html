@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#adia{
+			width:100%;
+			height:900px;
+			background-color:lightblue;
+
+			
+			animation-duration:4s;
+			animation-iteration-count: infinite;
+
+
+		}
+
+		@keyframes changeColor{
+			0%{
+				background-color: brown;
+			}
+
+			50%{
+				background-color:lightblue;
+			}
+
+
+			100%{
+				background-color:lightgreen;
+			}
+
+		}
+	</style>
+</head>
+<body>
+
+
+<div id="adia">
+
+	<script type="text/javascript">
+		
+		var box = document.getElementById('adia');
+
+		box.addEventListener("click", function(){
+			box.style.animationName="changeColor";
+
+			box.innerText = "happy birthday father!! ";
+
+		}
+
+			)
+	</script>
+	
+</div>
+</body>
+</html>

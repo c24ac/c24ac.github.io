@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    <style>
+      
+      h1{
+        color:lightgreen;
+      }
+      
+      #house{
+        width:500px;
+          height:500px; 
+        background-image: url(https://cdn.glitch.com/2be7e6c9-c80b-487f-af71-6b475269781c%2Ffloor%20plan.png?v=1607008087588);
+        background-size:cover;
+        
+        background-repeat:no-repeat;
+      }
+      
+      #kiera{
+        z-index:-1; position:absolute;
+        z-index:2;
+        background-image:url(https://cdn.glitch.com/2be7e6c9-c80b-487f-af71-6b475269781c%2Fkiera.png?v=1605548001178);
+        width:50px;
+        height:50px;
+        background-size:contain;
+                background-repeat:no-repeat;
+
+        
+      }
+    
+      
+      #livingRoom{
+       z-index:10;
+        position:relative;
+        width:200px;
+        height:120px;
+        border:1px solid red;
+        left:54%;
+        top:18%;
+        
+      }
+      
+      #kitchen{
+        z-index:10;
+        position:relative;
+        border: 1px solid blue;
+        width:150px;
+        height:85px;
+        left:60%;
+        top:19%;
+      }
+      
+      #bedroom1{
+        z-index:10;
+        border:1px solid green;
+        position:relative;
+        width:100px;
+        height:125px;
+        left:70%;
+        top:21%;
+      }
+      
+      #bedroom2{
+        z-index:10;
+        position:relative;
+        border:1px solid pink;
+        height:90px;
+        width:90px;
+        top:-50%;
+        left:26%;
+      }
+      
+      #bathroom1{
+        z-index:10;
+        position:relative;
+        border:1px solid yellow;
+        height:70px;
+        width:50px;
+        top:-45%;
+        left:17%;
+      }
+      
+      #bathroom2{
+        z-index:10;
+        position:relative;
+        border:1px solid purple;
+        height:50px;
+        width:100px;
+        top:-23.55%;
+        left:46.5%;
+      }
+      
+      #halfbathroom{
+        z-index:10;
+        position:relative;
+        border: 1px solid brown;
+        height:60px;
+        width:50px;
+        top: -67.5%;
+        left: 36.4%;
+      }
+      body{
+        cursor:none;
+      }
+    </style>
+    
+  </head>  
+  <body>
+    <h1>Adia and Kiera's House </h1>
+    
+    <div id="kiera">
+    </div>
+    
+    <div id="house">
+      
+    <a href="livingRoom.html">
+      
+      <div id="livingRoom">
+      </div></a>
+      
+      <a href="kitchen.html">
+      <div id="kitchen">
+          
+        </div></a>
+    
+    <a href="bedroom1.html">
+      <div id="bedroom1">
+        
+      </div></a>
+      
+
+   <a href="bedroom2.html">
+    <div id="bedroom2">
+      
+     </div></a>
+    
+    <a href="bathroom1.html">
+      <div id="bathroom1">
+        
+      </div>
+    </a>
+      
+      <a href="bathroom2.html">
+        <div id="bathroom2">
+        
+        </div>
+      </a>
+      
+      <a href="halfbathroom.html">
+      <div id="halfbathroom">
+        
+        </div></a>
+      <!--     end of house div
+ -->
+      
+    </div> 
+
+    
+    <script>
+      
+      var kiera = document.getElementById('kiera');
+      document.addEventListener("mousemove", function(event){
+        console.log(event.clientX, event.clientY);
+        
+kiera.style.left = event.clientX -25 +"px";
+kiera.style.top = event.clientY -25 +"px";
+
+      })
+      
+    
+    
+    </script>
+  </body>
+</html>
